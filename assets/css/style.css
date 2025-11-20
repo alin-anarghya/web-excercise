@@ -17,6 +17,8 @@
     gap: 20px;
 }
 
+
+
 /* Home */
 .jumbotron-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -43,6 +45,8 @@
     font-style: italic;
     font-weight: initial;
 }
+
+
 
 /* Services */
 .serv-bg {
@@ -77,10 +81,6 @@
 
 
 
-
-
-
-
 /* Products */
 .prd {
     background: #ffffff;
@@ -99,20 +99,14 @@
 
 .li-pad {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     justify-self: center;
 }
 
 .pro-img {
-    width: 200px;
-    height: 200px;
+    max-width: 150px;
+    max-height: 150px;
 }
-
-
-
-
-
-
 
 
 
@@ -151,19 +145,14 @@
     border: 1px solid white;
     border-radius: 30px;
     padding: 20px;
-    width: 500px;
+    width: 300px;
 }
 
 .abt-bla {
     align-self: center;
 }
 
-.abt-img {
-    display: flex;
-    justify-content: center;
-    width: 330px;
-    height: 440px;
-}
+
 
 /* Contact */
 .contact-bg {
@@ -197,6 +186,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 
 /* Footer */
 .footer-bg {
