@@ -1,0 +1,211 @@
+/* Header */
+.header-bg {
+    background-color: #02240b;
+}
+
+.header-logo {
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav {
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 20px;
+}
+
+/* Home */
+.jumbotron-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/home.jpg'); /* Lapisan hitam transparan (rgba(0,0,0,0.5)) di atas gambar */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron-pad {
+    margin-bottom: 0;
+}
+
+.home-head {
+    font-weight: initial;
+}
+
+.home-text {
+    font-style: italic;
+    font-weight: initial;
+}
+
+/* Services */
+.serv-bg {
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(2, 36, 11, 1) 100%);
+}
+
+.serv-head {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    padding-bottom: 0;
+    color: whitesmoke;
+}
+
+.serv {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-bottom: 80px;
+}
+
+.card-judul {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-variant: inherit;
+}
+
+
+
+
+
+
+
+/* Products */
+.prd {
+    background: #ffffff;
+    padding: 30px;
+}
+
+.pro-head {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.pro-head-txt {
+    font-weight: bold;
+}
+
+.li-pad {
+    padding: 20px;
+    max-width: 800px;
+    justify-self: center;
+}
+
+.pro-img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* About */
+.abt {
+    background-color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(2, 36, 11, 1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.abt-texts {
+    width: 600px;
+    height: 400px;
+}
+
+.abt-head {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.abt-head-stl {
+    font-weight: bold;
+}
+
+.abt-point {
+    padding-bottom: 10px;
+}
+
+.abt-num {
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+}
+
+.abt-bla {
+    align-self: center;
+}
+
+.abt-img {
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    height: 440px;
+}
+
+/* Contact */
+.contact-bg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/contact.jpg'); /* Lapisan hitam transparan (rgba(0,0,0,0.5)) di atas gambar */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 500px;
+}
+
+.form-serv {
+    padding: 30px;
+}
+
+.form-head {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer-bg {
+    background-color: #02240b;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    font-style: italic;
+}
