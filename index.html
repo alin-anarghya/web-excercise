@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,19 @@
     <title>Sadhana Computer</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark header-bg">
+        <nav class="navbar navbar-expand-lg navbar-dark header-bg fixed-top">
             <a class="navbar-brand" href="#">
                 <img class="header-logo" src="assets/img/logo.PNG">
             </a>
@@ -49,120 +52,206 @@
 
     <section id="home">
         <div class="jumbotron jumbotron-fluid jumbotron-img jumbotron-pad">
-            <div class="container">
-                <h1 class="display-4 home-head">Welcome to Sadhana Computer!</h1>
-                <p class="lead home-text">The place to find the most up-to-date electronic devices with affordable
-                    service prices.</p>
+            <div class="container text-center">
+                <h1 class="display-4 home-head" data-aos="fade-down" data-aos-duration="1000">
+                    Welcome to Sadhana Computer!
+                </h1>
+
+                <p class="lead home-text mb-4" data-aos="fade-up" data-aos-duration="1200">
+                    The place to find the most up-to-date electronic devices with affordable service prices.
+                </p>
+
+                <div data-aos="zoom-in" data-aos-delay="500">
+                    <a href="#products" class="btn btn-primary btn-lg home-cta-btn">
+                        See Our Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg home-cta-btn-alt ml-3">
+                        Contact Us
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="services" class="serv-bg">
-        <div class="serv-head">
-            <h3>We can provide you services such as,</h3>
-        </div>
+    <section id="services" class="serv-bg py-5">
+        <div class="container">
 
-        <div class="serv">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <img src="assets/img/card1.webp" class="card-img-top">
-                <div class="card-body card-judul">
-                    <p class="card-text">Electronic Device Service</p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="serv-head text-center mb-5" data-aos="fade-down">
+                        <h3>We can provide you services such as,</h3>
+                    </div>
                 </div>
             </div>
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <img src="assets/img/card3.avif" class="card-img-top">
-                <div class="card-body card-judul">
-                    <p class="card-text">LED Video Walls Installation</p>
-                </div>
-            </div>
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <img src="assets/img/card2.jpg" class="card-img-top">
-                <div class="card-body card-judul">
-                    <p class="card-text">Internet Device Installation</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="products">
-        <div class="prd">
-            <div class="pro-head">
-                <h3 class="pro-head-txt">Our Products</h3>
-            </div>
-            <div>
-                <ul class="list-unstyled">
-                    <li class="media li-pad">
-                        <img src="assets/img/pd1.png" class="mr-3 pro-img">
-                        <div class="media-body">
-                            <h4 class="mt-0 mb-1">Laptops</h4>
-                            <p>We are your premier destination for finding the perfect laptop, offering an unparalleled selection 
-                                that spans from ultra-portable machines for everyday productivity to high-performance gaming rigs and 
-                                robust workstations. Whether you are a student needing a lightweight Ultrabook, a professional seeking a 
-                                powerful device for creative projects, or a serious gamer, our expert staff is ready to help you find the 
-                                ideal blend of speed, style, and portability. Stop by our store or browse our comprehensive online catalog 
-                                to discover the technology that will power your next big achievement.</p>
+            <div class="row serv justify-content-center">
+
+                <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-wrapper">
+                        <div class="card service-card shadow bg-white rounded">
+                            <img src="assets/img/card1.webp" class="card-img-top service-img">
+                            <div class="card-body service-body text-center">
+                                <p class="card-text">Electronic Device Service</p>
+                            </div>
                         </div>
-                    </li>
-                    <li class="media my-4 li-pad">
-                        <img src="assets/img/pd2.png" class="mr-3 pro-img">
-                        <div class="media-body">
-                            <h4 class="mt-0 mb-1">LED Video Walls</h4>
-                            <p>We provide an extensive and versatile selection of digital display solutions, covering everything from 
-                                fine-pitch indoor screens perfect for high-resolution corporate lobbies and control rooms to ultra-bright, 
-                                robust outdoor panels ideal for impactful digital billboards and large-scale event staging. Whether your 
-                                project demands seamless modular integration, custom curved layouts, or exceptional weatherproof durability, 
-                                our specialists will provide the perfect videotron technology to maximize visual impact and ensure your 
-                                message is seen clearly, day or night. Contact us today to build your brilliant display solution.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-wrapper">
+                        <div class="card service-card shadow bg-white rounded">
+                            <img src="assets/img/card3.avif" class="card-img-top service-img">
+                            <div class="card-body service-body text-center">
+                                <p class="card-text">LED Video Walls Installation</p>
+                            </div>
                         </div>
-                    </li>
-                    <li class="media li-pad">
-                        <img src="assets/img/pd3.jpg" class="mr-3 pro-img">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Routers</h5>
-                            <p>We specialize in providing the ideal networking solution for every user, whether you are a heavy gamer 
-                                needing ultra-low latency, a professional working from home requiring robust VPN support, or a busy 
-                                household relying on seamless Wi-Fi coverage. Our inventory spans from reliable, budget-friendly models 
-                                for standard browsing to cutting-edge Mesh Wi-Fi systems and powerful Wi-Fi 7 routers designed to cover 
-                                large properties and handle dozens of connected devices. Visit us today to find the perfect router that 
-                                guarantees speed, security, and a flawlessly fast internet experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-wrapper">
+                        <div class="card service-card shadow bg-white rounded">
+                            <img src="assets/img/card2.jpg" class="card-img-top service-img">
+                            <div class="card-body service-body text-center">
+                                <p class="card-text">Internet Device Installation</p>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="abt">
-            <div class="abt-texts">
-                <div class="abt-head">
-                    <h3 class="abt-head-stl">About Us</h3>
-                </div>
-                <div class="abt-point">
-                    <div class="card abt-num shadow">
-                        <div class="abt-bla">Established since 1999.</div>
+    <section id="products" class="py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="pro-head">
+                        <h3 class="pro-head-txt">Our Products</h3>
                     </div>
                 </div>
-                <div class="abt-point">
-                    <div class="card abt-num shadow">
-                        <div class="abt-bla">++20 years of experience.</div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <ul class="list-unstyled product-list">
+
+                        <li class="media product-item mb-5" data-aos="fade-right">
+                            <img src="assets/img/pd1.png" class="mr-3 pro-img align-self-center">
+                            <div class="media-body">
+                                <h4 class="mt-0 mb-2 product-title">💻 Laptops</h4>
+                                <p class="product-desc">We are your premier destination for finding the perfect laptop,
+                                    offering an unparalleled selection that spans from ultra-portable machines for
+                                    everyday productivity to high-performance gaming rigs and robust workstations.
+                                    [....]</p>
+                                <a href="#" class="btn btn-sm btn-outline-success mt-2">See More</a>
+                            </div>
+                        </li>
+
+                        <li class="media product-item mb-5" data-aos="fade-left">
+                            <div class="media-body order-lg-1">
+                                <h4 class="mt-0 mb-2 product-title">📺 LED Video Walls</h4>
+                                <p class="product-desc">We provide an extensive and versatile selection of digital
+                                    display solutions, covering everything from fine-pitch indoor screens perfect for
+                                    high-resolution corporate lobbies and control rooms to ultra-bright, robust outdoor
+                                    panels. [....]</p>
+                                <a href="#" class="btn btn-sm btn-outline-success mt-2">See More</a>
+                            </div>
+                            <img src="assets/img/pd2.png" class="ml-3 pro-img order-lg-2 align-self-center">
+                        </li>
+
+                        <li class="media product-item" data-aos="fade-right">
+                            <img src="assets/img/pd3.jpg" class="mr-3 pro-img align-self-center">
+                            <div class="media-body">
+                                <h4 class="mt-0 mb-2 product-title">🌐 Routers</h4>
+                                <p class="product-desc">We specialize in providing the ideal networking solution for
+                                    every user, whether you are a heavy gamer needing ultra-low latency, a professional
+                                    working from home requiring robust VPN support, or a busy household relying on
+                                    seamless Wi-Fi coverage. [....]</p>
+                                <a href="#" class="btn btn-sm btn-outline-success mt-2">See More</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="display-4 font-weight-bold" id="about-title">About Us</h2>
+                    <hr class="w-25 mx-auto bg-success">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-lg-10 mx-auto text-center">
+                    <p class="lead" id="about-lead-text">
+                        Since its founding in 1999, Sadhana Computer has been committed to being your trusted partner
+                        for all your technology needs. Our strengths lie in our experience, extensive network,
+                        and focus on providing the best solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 abt-texts" data-aos="fade-right">
+                    <div class="row">
+                        <div class="col-sm-6 mb-4">
+                            <div class="card abt-num shadow h-100 text-center">
+                                <div class="card-body">
+                                    <i class="fas fa-calendar-alt fa-2x mb-2 text-success"></i>
+                                    <div class="abt-bla">Established Since 1999</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="card abt-num shadow h-100 text-center">
+                                <div class="card-body">
+                                    <i class="fas fa-award fa-2x mb-2 text-success"></i>
+                                    <div class="abt-bla">++20 Years of Experience</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="card abt-num shadow h-100 text-center">
+                                <div class="card-body">
+                                    <i class="fas fa-network-wired fa-2x mb-2 text-success"></i>
+                                    <div class="abt-bla">Has Extensive Connections</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="card abt-num shadow h-100 text-center">
+                                <div class="card-body">
+                                    <i class="fas fa-tag fa-2x mb-2 text-success"></i>
+                                    <div class="abt-bla">Best Experience & Prices</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="abt-point">
-                    <div class="card abt-num shadow">
-                        <div class="abt-bla">Has extensive connections.</div>
-                    </div>
-                </div>
-                <div class="abt-point">
-                    <div class="card abt-num shadow">
-                        <div class="abt-bla">Best experience and prices.</div>
+
+                <div class="col-md-7 d-flex align-items-center justify-content-center" data-aos="fade-left"
+                    data-aos-delay="200">
+                    <div class="chart-container">
+                        <canvas id="customerChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-bg" id="contact">
+    <section id="contact" class="contact-bg">
         <div class="form-serv">
             <div class="form-head">
                 <h3>Got any problems?</h3>
@@ -193,11 +282,43 @@
     </section>
 
     <footer class="footer-bg">
-        <div class="footer-text">
-            <h6>Jalan Raya Solo-Tawangmangu, Dagen, Kecamatan Jaten, Kabupaten Karanganyar, Jawa Tengah 57731</h6>
-            <h7>Open : 08.00-17.00 WIB</h7>
+        <div class="container py-4">
+            <div class="row align-items-stretch">
+                <div class="col-md-10 d-flex flex-column justify-content-center">
+
+                    <div class="footer-info-line mb-2 mb-md-3 text-md-start">
+                        <i class="fas fa-map-marker-alt fa-fw text-success me-2"></i>
+                        <span class="footer-info-text">Jalan Raya Solo-Tawangmangu, Dagen, Jaten, Karanganyar, Jawa
+                            Tengah 57731</span>
+                    </div>
+
+                    <div class="footer-info-line text-md-start">
+                        <i class="fas fa-clock fa-fw text-success me-2"></i>
+                        <span class="footer-info-text">Open : 08.00 - 17.00 WIB</span>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 d-flex align-items-end justify-content-end">
+                    <a href="https://wa.me/6285725272990" class="whatsapp-giant-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 border-secondary">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright mb-0">Copyright © 2024 Sadhana Computer | Dibuat oleh : Chaya Lintang
+                        Anarghya</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
